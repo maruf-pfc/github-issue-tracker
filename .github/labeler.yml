@@ -1,0 +1,25 @@
+# Add 'frontend' label to any changes in src
+frontend:
+- src/**/*
+
+# Add 'tests' label to any changes in tests
+tests:
+- tests/**/*
+
+# Add 'ci' label to any changes in .github/workflows
+ci:
+- .github/workflows/**/*
+
+# Add 'docker' label to any changes in Dockerfile or docker-compose
+docker:
+- Dockerfile
+- docker-compose.yml
+- nginx.conf
+
+# Add 'docs' label to any changes in README, CONTRIBUTING, etc.
+docs:
+- README.md
+- CONTRIBUTING.md
+- CODE_OF_CONDUCT.md
+- SECURITY.md
+- LICENSE

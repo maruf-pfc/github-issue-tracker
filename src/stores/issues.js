@@ -60,7 +60,7 @@ export const useIssuesStore = defineStore('issues', () => {
         if (lastPage) {
           pagination.value.totalPages = parseInt(lastPage, 10)
         }
-      } catch (e) {
+      } catch {
         // failed to parse
       }
     }

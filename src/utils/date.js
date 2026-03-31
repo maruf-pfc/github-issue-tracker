@@ -8,7 +8,7 @@ export function formatRelative(date) {
   if (!date) return ''
   try {
     return formatDistanceToNow(new Date(date), { addSuffix: true })
-  } catch (e) {
+  } catch {
     return ''
   }
 }
@@ -21,7 +21,7 @@ export function formatAbsolute(date) {
   if (!date) return ''
   try {
     return format(new Date(date), 'MMM d, yyyy')
-  } catch (e) {
+  } catch {
     return ''
   }
 }

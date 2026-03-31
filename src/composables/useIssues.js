@@ -3,7 +3,7 @@ import { useIssuesStore } from '@/stores/issues'
 import { useRepoStore } from '@/stores/repo'
 import { useUiStore } from '@/stores/ui'
 import { githubService, parseLinkHeader } from '@/api/github'
-import { useRoute, useRouter } from 'vue-router'
+// No router needed here
 
 export function useIssues() {
   const issuesStore = useIssuesStore()

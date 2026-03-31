@@ -36,7 +36,7 @@ export function useRateLimit() {
       const response = await githubService.getRateLimit()
       rateLimitRemaining.value = response.data.rate.remaining
       rateLimitReset.value = response.data.rate.reset
-    } catch (e) {
+    } catch {
       // Ignore initial load failure silently
     }
   }
