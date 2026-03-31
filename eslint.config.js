@@ -14,6 +14,6 @@ export default [
   },
 
   ...pluginVue.configs['flat/essential'],
-  pluginOxlint.configs['flat/recommended'],
+  ...pluginOxlint.configs['flat/recommended'],
   skipFormatting,
 ]
