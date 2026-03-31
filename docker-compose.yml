@@ -1,0 +1,14 @@
+services:
+  github-issue-tracker:
+    build: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=false"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

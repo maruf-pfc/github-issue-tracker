@@ -2,7 +2,7 @@
 
 A production-grade, high-performance Single Page Application (SPA) for tracking GitHub issues. Built with **Vue 3**, **Vite**, and **Pinia**, featuring a signature "Editorial Utility" aesthetic—sharp, dense, and intentional.
 
-![GitHub Issue Tracker](https://via.placeholder.com/1200x600/09090b/fafafa?text=GitHub+Issue+Tracker+SPA) 
+![GitHub Issue Tracker](./public/demo.webp) 
 
 ## ✨ Features
 
@@ -44,7 +44,7 @@ A production-grade, high-performance Single Page Application (SPA) for tracking 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/maruf-pfc/github-issue-tracker.git
+   git clone https://github.com/blackstart-labs/github-issue-tracker.git
    cd github-issue-tracker
    ```
 
@@ -64,10 +64,32 @@ A production-grade, high-performance Single Page Application (SPA) for tracking 
    bun dev
    ```
 
-5. Run unit tests:
-   ```bash
-   bun test:unit
-   ```
+## 🐳 Docker Support
+
+Build and run the application in a lightweight container:
+
+```bash
+# Build the image
+docker build -t github-issue-tracker .
+
+# Run the container
+docker run -p 8080:80 github-issue-tracker
+```
+
+Alternatively, use the provided Docker Compose:
+
+```bash
+docker-compose up -d
+```
+
+The application will be accessible at `http://localhost:8080`.
+
+## 🧪 Testing
+
+Run unit tests with Vitest:
+```bash
+bun test:unit
+```
 
 ## 📐 Implementation Details
 
@@ -80,6 +102,10 @@ The `IssuesView` utilizes a two-way sync between Pinia state and URL query param
 ### Security
 Markdown rendering is sanitized using `DOMPurify` after being processed by `marked` and highlighted via `highlight.js`.
 
----
+## 🤝 Contributing
 
-Built with ❤️ by [Antigravity](https://github.com/maruf-pfc) e.g. Maruf.
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
