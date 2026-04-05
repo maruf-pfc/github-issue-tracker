@@ -5,9 +5,8 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: './', // Using relative base for robust deployment on GitHub Pages (Hash Mode)
+  base: '/',
   plugins: [
     vue(),
     vueJsx(),

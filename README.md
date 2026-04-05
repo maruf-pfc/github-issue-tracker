@@ -1,12 +1,14 @@
 # GitHub Issue Tracker SPA
 
 [![CI](https://github.com/blackstart-labs/github-issue-tracker/actions/workflows/ci.yml/badge.svg)](https://github.com/blackstart-labs/github-issue-tracker/actions/workflows/ci.yml)
-[![Deploy](https://github.com/blackstart-labs/github-issue-tracker/actions/workflows/deploy.yml/badge.svg)](https://github.com/blackstart-labs/github-issue-tracker/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 A production-grade, high-performance Single Page Application (SPA) for tracking GitHub issues. Built with **Vue 3**, **Vite**, and **Pinia**, featuring a signature "Editorial Utility" aesthetic—sharp, dense, and intentional.
 
 ![GitHub Issue Tracker](./public/demo.webp) 
+
+> [!TIP]
+> If you find this project useful, please consider giving it a **Star** on GitHub! It helps more developers discover this tool.
 
 ## ✨ Features
 
@@ -90,12 +92,8 @@ The application will be accessible at `http://localhost:8080`.
 
 ## 🚀 Deployment
 
-### GitHub Pages (Default)
-The project is configured to deploy to GitHub Pages automatically on every push to the `main` branch. 
-See [.github/workflows/deploy.yml](.github/workflows/deploy.yml) for details.
-
-### Vercel
-To deploy to Vercel, connect your repository to Vercel and it will automatically detect the Vite environment. The provided [vercel.json](vercel.json) ensures correct SPA routing.
+### Vercel (Recommended)
+This project is optimized for deployment on Vercel. Connect your repository to Vercel and it will automatically detect the Vite environment. The provided [vercel.json](vercel.json) ensures correct SPA routing.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fblackstart-labs%2Fgithub-issue-tracker)
 
