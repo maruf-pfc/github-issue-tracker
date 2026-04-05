@@ -1,25 +1,32 @@
 # Add 'frontend' label to any changes in src
 frontend:
-- src/**/*
+  - changed-files:
+    - any-glob-to-any-file: 'src/**/*'
 
 # Add 'tests' label to any changes in tests
 tests:
-- tests/**/*
+  - changed-files:
+    - any-glob-to-any-file: 'tests/**/*'
 
 # Add 'ci' label to any changes in .github/workflows
 ci:
-- .github/workflows/**/*
+  - changed-files:
+    - any-glob-to-any-file: '.github/workflows/**/*'
 
 # Add 'docker' label to any changes in Dockerfile or docker-compose
 docker:
-- Dockerfile
-- docker-compose.yml
-- nginx.conf
+  - changed-files:
+    - any-glob-to-any-file: 
+      - 'Dockerfile'
+      - 'docker-compose.yml'
+      - 'nginx.conf'
 
 # Add 'docs' label to any changes in README, CONTRIBUTING, etc.
 docs:
-- README.md
-- CONTRIBUTING.md
-- CODE_OF_CONDUCT.md
-- SECURITY.md
-- LICENSE
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'README.md'
+      - 'CONTRIBUTING.md'
+      - 'CODE_OF_CONDUCT.md'
+      - 'SECURITY.md'
+      - 'LICENSE'
