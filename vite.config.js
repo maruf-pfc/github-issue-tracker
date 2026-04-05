@@ -7,7 +7,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/github-issue-tracker/' : '/',
+  base: './', // Using relative base for robust deployment on GitHub Pages (Hash Mode)
   plugins: [
     vue(),
     vueJsx(),
